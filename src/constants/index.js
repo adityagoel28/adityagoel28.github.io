@@ -17,6 +17,7 @@ import {
     // sql,
     docker,
     anastrat,
+    newtonSchool,
     ibm,
     alastor,
     ETLPipeline,
@@ -132,6 +133,17 @@ import {
       points: [
         "Developed workflows with Apache Airflow to process data from multiple sources like AWS which increased data processing speed and worked on managing different dependent and independent cron jobs using Apache Airflow",
         "Scheduled and monitored workflows to ensure that all processes are running smoothly and on time.",
+      ],
+    },
+    {
+      title: "Technical Content Engineer Intern",
+      company_name: "Newton School",
+      icon: newtonSchool,
+      iconBg: '#E6DEDD',
+      date: "March 2023 - April 2023",
+      points: [
+        "Worked on the content platform for the Newton School website and created questions on SQL and Python for the students to practice their skills.",
+        "Created lecture notes on different SQL topics and worked on new assignments.",
       ],
     },
     {

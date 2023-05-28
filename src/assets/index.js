@@ -27,6 +27,7 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import anastrat from "./company/anastrat.png";
+import newtonSchool from "./company/newtonschool.png";
 import ibm from "./company/ibm.png";
 import alastor from "./company/alastor.png";
 
@@ -67,6 +68,7 @@ export {
   threejs,
   meta,
   anastrat,
+  newtonSchool,
   ibm,
   alastor,
   ETLPipeline,
