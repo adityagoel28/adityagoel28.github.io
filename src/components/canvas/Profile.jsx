@@ -52,7 +52,7 @@ const ProfileCanvas = () => {
   return (
     <Canvas
     frameloop='always' shadows camera={{position: [20, 3, 5], fov: 25}}
-    gl = {{preserveDrawingBuffer: true}} >
+    gl = {{preserveDrawingBuffer: true}} style={{ position: 'relative', zIndex: 0 }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false}
         maxPolarAngle={Math.PI / 2}
