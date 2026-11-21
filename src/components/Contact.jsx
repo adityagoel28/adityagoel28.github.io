@@ -1,6 +1,5 @@
-import {useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
@@ -25,25 +24,32 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send('service_d775x47', 'template_b5vyau9', {
-      from_name: form.name,
-      to_name: 'Aditya',
-      from_email: form.email,
-      to_email: 'aditya20102@iiitnr.edu.in',
-      message: form.message,
-    }, 'hUCmeYKN7-2pRhpit').then(() => {
-      setLoading(false);
-      setForm({
-        name: "",
-        email: "",
-        message: "",
+
+    import('@emailjs/browser')
+      .then((emailjsModule) => {
+        const emailjs = emailjsModule.default || emailjsModule;
+        return emailjs.send('service_d775x47', 'template_b5vyau9', {
+          from_name: form.name,
+          to_name: 'Aditya',
+          from_email: form.email,
+          to_email: 'aditya20102@iiitnr.edu.in',
+          message: form.message,
+        }, 'hUCmeYKN7-2pRhpit');
       })
-      alert("Your message has been sent successfully!");
-    }, (error) => {
-      setLoading(false);
-      console.log(error.text);
-      alert("Sorry, your message could not be sent. Please try again later.");
-    });
+      .then(() => {
+        setLoading(false);
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+        alert("Your message has been sent successfully!");
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.error(error);
+        alert("Sorry, your message could not be sent. Please try again later.");
+      });
   }
 
   return (
