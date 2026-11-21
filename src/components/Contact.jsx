@@ -32,7 +32,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: 'Aditya',
           from_email: form.email,
-          to_email: 'aditya20102@iiitnr.edu.in',
+          to_email: 'adityagoel2002@gmail.com',
           message: form.message,
         }, 'hUCmeYKN7-2pRhpit');
       })

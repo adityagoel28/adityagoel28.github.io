@@ -20,6 +20,9 @@ import {
     newtonSchool,
     ibm,
     alastor,
+    hilabs,
+    canonical,
+    ge,
     ETLPipeline,
     homepage,
     videoCaptioning,
@@ -125,29 +128,50 @@ import {
   
   const experiences = [
     {
+      title: "SDE 2",
+      company_name: "HiLabs",
+      icon: hilabs,
+      iconBg: "#FFFFFF",
+      date: "Nov 2025 - Present",
+      points: [
+        "Engineered and maintained large-scale PySpark ETL pipelines processing 100TB+ of healthcare data on Amazon EMR, integrating with Amazon S3, and Snowflake for reliable data ingestion.",
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company_name: "Canonical",
+      icon: canonical,
+      iconBg: "#000000",
+      date: "Sept 2024 - Oct 2025",
+      points: [
+        "Developed and maintained scalable web service APIs in Python, for high-performance applications.",
+        "Collaborated with a globally distributed Stores team to design, implement, and review backend features and enhancements, ensuring reliable, and production ready code on Ubuntu-based environments.",
+      ],
+    },
+    {
+      title: "Digital Technology Intern",
+      company_name: "GE Digital",
+      icon: ge,
+      iconBg: "#FFFFFF",
+      date: "Jan 2024 - July 2024",
+      points: [
+        "Developed a CI/CD pipeline solution to streamline deployment processes, reducing deployment time for artifacts to AWS Elastic Beanstalk and developing distributed applications at scale for application resiliency.",
+        "Provisioned and managed AWS infrastructure using Terraform for automated and scalable deployments.",
+      ],
+    },
+    {
       title: "Backend Developer Intern",
       company_name: "Anastrat",
       icon: anastrat,
       iconBg: "#383E56",
       date: "Dec 2022 - April 2023",
       points: [
-        "Developed workflows with Apache Airflow to process data from multiple sources like AWS which increased data processing speed and worked on managing different dependent and independent cron jobs using Apache Airflow",
-        "Scheduled and monitored workflows to ensure that all processes are running smoothly and on time.",
+        "Developed workflows with Apache Airflow to process data from multiple sources, increasing data processing speed.",
+        "Scheduled and monitored cron jobs and workflows to ensure that all processes are running smoothly and on time.",
       ],
     },
     {
-      title: "Technical Content Engineer Intern",
-      company_name: "Newton School",
-      icon: newtonSchool,
-      iconBg: '#E6DEDD',
-      date: "March 2023 - April 2023",
-      points: [
-        "Worked on the content platform for the Newton School website and created questions on SQL and Python for the students to practice their skills.",
-        "Created lecture notes on different SQL topics and worked on new assignments.",
-      ],
-    },
-    {
-      title: "Open-Source Developer",
+      title: "GRM Developer - Certificate",
       company_name: "IBM",
       icon: ibm,
       iconBg: "#E6DEDD",
@@ -155,18 +179,6 @@ import {
       points: [
         "Conducted blackbox testing on 10 APIs using EvoMaster, exposing different potential vulnerabilities.",
         "Performed comparative analysis between testing tools and identified areas for improvement to optimize reliability and enhance stability",
-      ],
-    },
-    {
-      title: "Web Developer Intern",
-      company_name: "Alastor Infosec Private Limited",
-      icon: alastor,
-      iconBg: "#383E56",
-      date: "March 2022 - April 2022",
-      points: [
-        "Developed a full-stack website using Django as the Backend for Cyber asset attack surface management.",
-        "Created different visualization charts, including line graphs, pie charts and more, on the dashboard for the users to better understand the data",
-        "Created a user authentication system that includes registration, login, logout, and password reset functionality.",
       ],
     },
   ];
@@ -245,7 +257,7 @@ import {
     {
       name: "Leetcode Stats API",
       description:
-        "This API allows us to easily access statistical data about users on Leetcode. It is built using Python and GrpahQL and uses the Leetcode API to fetch data. The API will return an image object containing our Leetcode statistics which we can add anywhere.",
+        "This API allows us to easily access statistical data about users on Leetcode. It is built using Python and GraphQL and uses the Leetcode API to fetch data. The API will return an image object containing our Leetcode statistics which we can add anywhere.",
       tags: [
         {
           name: "Python",

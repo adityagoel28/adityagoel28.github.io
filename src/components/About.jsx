@@ -25,18 +25,28 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variance={textVariant()}>
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-      <motion.p variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        style={{ justifyContent: 'space-around', textAlign: 'justify', textJustify: 'inter-word' }} >
-        Hi, my name is Aditya Goel and I am currently pursuing a B.Tech degree in Data Science and Artificial Intelligence. 
-        As a full-stack web developer, I have gained extensive experience in a range of tech stacks, including Python (Django), Tkinter, JavaScript, React.js, three.js, SQL, and 
-        cloud services such as AWS. I am passionate about both web development and the field of data science and AI, 
-        and I am dedicated to continuing my learning and growth in these areas.
-      </motion.p>
+      <motion.div
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex flex-col gap-4'
+        style={{ textAlign: 'justify', textJustify: 'inter-word' }}
+      >
+        <p>
+          ‣ Software engineer with 2+ yoe. Data Science and AI graduate. As a software engineer, I have gained extensive experience in a range of tech stacks. I am dedicated to continuing my learning and growth in these areas.
+        </p>
+        <p>
+          ‣ I have a strong interest in areas such as Backend Development, Full Stack Development, Cloud Development, and Web Development.
+        </p>
+        <p>
+          ‣ My expertise and experience encompass Python, Django, FastAPI, JavaScript, SQL, PostgreSQL, Postman, Redis, AWS, Jenkins, Terraform, Git, Microservices, REST API, GraphQL, Linux, Docker, MongoDB and Apache Airflow.
+        </p>
+        <p>
+          ‣ Additionally, I possess a solid understanding of Data Structures and Algorithms (DSA), along with proficient problem-solving skills.
+        </p>
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

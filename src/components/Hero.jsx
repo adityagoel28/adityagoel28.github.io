@@ -16,7 +16,8 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915eff]">Aditya</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Full Stack Developer <br className="sm:block hdden"/> with proficiency in Backend Development. <br/><br/>
+            I am a Software Engineer building high-performance APIs, <br className="sm:block hidden"/>
+            distributed systems, and large-scale data platforms. <br/><br/>
             <a href="https://drive.google.com/file/d/1CnpiCgS0zHtak3MTzf8R5UVUNlObxHkI/view?usp=sharing" target="_blank"
             style={{ position: 'relative', zIndex: 10, color: '#915eff', fontWeight: 'bold'}}>
               My Resume

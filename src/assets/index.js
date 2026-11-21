@@ -30,6 +30,9 @@ import anastrat from "./company/anastrat.png";
 import newtonSchool from "./company/newtonschool.png";
 import ibm from "./company/ibm.png";
 import alastor from "./company/alastor.png";
+import hilabs from "./company/hilabs.png";
+import canonical from "./company/canonical.webp";
+import ge from "./company/ge.png";
 
 import ETLPipeline from "./etl-pipeline.png";
 import homepage from "./homepage.jpg";
@@ -71,6 +74,9 @@ export {
   newtonSchool,
   ibm,
   alastor,
+  hilabs,
+  canonical,
+  ge,
   ETLPipeline,
   homepage,
   videoCaptioning,
