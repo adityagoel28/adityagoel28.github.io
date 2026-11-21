@@ -1,4 +1,4 @@
-import{r as e,_ as p,v as P,h as x,D as f,M as R,c as v,j as u,C as z,P as M,w as j}from"./index-6bba8ac1.js";import{m as A}from"./react-merge-refs.esm-239dbb3c.js";class C extends P{constructor(r){super(r),this.onBeforeCompile=(t,o)=>{const{isWebGL2:s}=o.capabilities;t.fragmentShader=t.fragmentShader.replace("#include <output_fragment>",`
+import{r as e,_ as p,v as P,h as x,D as f,M as R,c as v,j as u,C as z,P as M,w as j}from"./index-05f520e2.js";import{m as A}from"./react-merge-refs.esm-239dbb3c.js";class C extends P{constructor(r){super(r),this.onBeforeCompile=(t,o)=>{const{isWebGL2:s}=o.capabilities;t.fragmentShader=t.fragmentShader.replace("#include <output_fragment>",`
         ${s?"#include <output_fragment>":`#extension GL_OES_standard_derivatives : enable
 #include <output_fragment>`}
       vec2 cxy = 2.0 * gl_PointCoord - 1.0;
